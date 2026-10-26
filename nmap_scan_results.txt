@@ -1,0 +1,14 @@
+# Nmap 7.99 scan initiated Sun Oct 25 19:09:59 2026 as: /usr/lib/nmap/nmap -sV -oN nmap_scan_results.txt 192.168.50.20
+Nmap scan report for 192.168.50.20
+Host is up (0.00075s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+MAC Address: 08:00:27:80:29:19 (Oracle VirtualBox virtual NIC)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 25 19:10:10 2026 -- 1 IP address (1 host up) scanned in 11.11 seconds
