@@ -1,39 +1,29 @@
-Oasis infobyte Internship -Task1 
+# Task 2: UFW Firewall
 
-# Nmap Network Scanning
+Objective: Configure a linux firewall.
 
-## Objective
-Find open ports and services using Nmap.
+Tools: Kali linux, UFW, VirtualBox.
 
-## Tools 
+Firewall Rules:
 
-- Kali linux
-- Nmap 7.99
-- Windows 10
-- VirtualBox 
+Firewall Rules:
 
-## Target 
+- Port 22: Allow SSH
+- Port 80: Deny HTTP
+- Port 443: Alloe HTTPS
+- Port 21: Deny FTP
 
-IP: 192.168.50.20
+Default Policies:
 
-## Open Ports 
+- Incoming: Deny
+- Outgoing: Allow
 
-- 135: MSRPC
-- 139: NetBIOS
-- 445: SMB
--3389: Remote Desktop
+Verification: UFW is active.
+See firewall_status.txt for results.
 
-## security Risks 
+Files:
+- firewall_setup.sh
+- firewall_status.txt
+- README.md
 
-Open ports may expose services to attackers.
-Use strong passwords, restrict access, and update Windows.
-
-## Ethics 
-
-I scanned my own Windows VM in a private lab.
-
-## Files 
-
-- nmap_basic_scan.txt
-- nmap_scan_results.txt
-- nmap_os_detection.txt
+Ethics: Tested on my own kali Linux VM.
